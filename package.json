@@ -1,0 +1,19 @@
+{
+  "name": "knative-workshop",
+  "version": "0.0.1",
+  "description": "AWS EKS 환경에 KNative를 설치하고 간단한 서비스를 구성해봅니다.",
+  "main": "index.js",
+  "authors": {
+    "name": "Pyunghyuk Yoo",
+    "email": "yoophi@gmail.com"
+  },
+  "repository": "https://github.com/yoophi/knative-workshop/knative-workshop",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
