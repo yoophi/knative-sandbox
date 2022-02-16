@@ -2,14 +2,8 @@
 sidebar: auto
 ---
 
-# Config
+# Links
 
-## foo
+## Knative
 
-- Type: `string`
-- Default: `/`
-
-## bar
-
-- Type: `string`
-- Default: `/`
+- [Knative](https://knative.dev/)
