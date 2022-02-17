@@ -1,0 +1,23 @@
+# cluster-issuer.yaml
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    email: $CLUSTER_ISSUER_EMAIL
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - dns01:
+        route53:
+          accessKeyID: $CLUSTER_ISSUER_ACCESS_KEY_ID
+          region: ap-northeast-2
+          role: ""
+          secretAccessKeySecretRef:
+            key: secret-access-key
+            name: acme-route53
+      selector:
+        dnsZones:
+        - $CLUSTER_ISSUER_DNS_ZONE
