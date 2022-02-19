@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # cert-manager
 
 ## cert-manager 설치 

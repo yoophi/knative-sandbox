@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Knative + Kong + EKS Workshop",
+  title: "Knative on EKS",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -24,7 +24,7 @@ module.exports = {
     ],
   ],
 
-  theme: 'book',
+  theme: "book",
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -38,21 +38,89 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: "Quick Starts",
-        link: "/quick-starts/",
+        text: "Installing",
+        link: "/installing/",
+      },
+      {
+        text: "Knative Serving",
+        link: "/knative/serving/",
+      },
+      {
+        text: "Knative Eventing",
+        link: "/knative/eventing/",
+      },
+      {
+        text: "Cookbook",
+        link: "/cookbook/",
       },
       {
         text: "Links",
         link: "/links/",
       },
+      {
+        text: "Github",
+        link: "https://github.com/yoophi/knative-workshop",
+      },
     ],
     sidebar: {
-      "/links/": [
+      // "/links/": [
+      //   {
+      //     title: "Links",
+      //     collapsable: false,
+      //     children: [""],
+      //   },
+      // ],
+      "/": [
         {
-          title: "Links",
+          title: "",
           collapsable: false,
-          children: [""],
+          sidebarDepth: 0,
+          children: [["/", "Home"]],
         },
+        // {
+        //   title: "",
+        //   collapsable: false,
+        //   sidebarDepth: 0,
+        //   children: [["/installing", "Installing 🔧"]],
+        // },
+        {
+          // title: "Installing",
+          title: "",
+          collapsable: false,
+          children: [
+            ["/installing/", "Installing"],
+            ["/installing/eks", "Installing EKS 💻"],
+            ["/installing/knative", "Installing Knative 👌"],
+            ["/installing/kong-for-k8s", "Installing Kong for Kubernetes 🌟"],
+            ["/installing/cert-manager", "Installing cert-manager 😃"],
+          ],
+        },
+        {
+          title: "Knative",
+          collapsable: false,
+          children: [
+            ["/knative/serving", "Knative Serving ✨"],
+            ["/knative/eventing", "Knative Eventing 📚"],
+          ],
+        },
+        {
+          title: "",
+          collapsable: false,
+          children: [["/cookbook/", "Cookbook ✨"]],
+        },
+        {
+          title: "",
+          collapsable: false,
+          children: [["/links/", "Links ✨"]],
+        },
+        // {
+        //   title: "Extras",
+        //   collapsable: false,
+        //   children: [
+        //     ["/extras/contributing", "Contributing ✨"],
+        //     ["/extras/license", "License 📚"],
+        //   ],
+        // },
       ],
     },
   },

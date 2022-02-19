@@ -1,8 +1,8 @@
----
+<!-- ---
 sidebar: auto
----
+--- -->
 
-# Knative Workshop
+# Knative Workshop 소개
 
 AWS EKS 환경에 Knative와 Kong API Gateway를 설치하고 
 Kubernetes 기반의 Serverless 환경을 구성해봅니다.
