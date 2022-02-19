@@ -24,6 +24,7 @@ module.exports = {
     ],
   ],
 
+  theme: 'book',
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
