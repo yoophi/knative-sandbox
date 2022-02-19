@@ -91,6 +91,8 @@ module.exports = {
             ["/installing/", "Installing"],
             ["/installing/eks", "Installing EKS 💻"],
             ["/installing/knative", "Installing Knative 👌"],
+            ["/installing/istio", "Installing Istio 👌"],
+            ["/installing/config-dns", "Config DNS with Route53 👌"],
             ["/installing/kong-for-k8s", "Installing Kong for Kubernetes 🌟"],
             ["/installing/cert-manager", "Installing cert-manager 😃"],
           ],
